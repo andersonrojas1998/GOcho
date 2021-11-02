@@ -104,7 +104,7 @@
 <!--  -->
 <div class="modal fade" id="mdl_created_user" tabindex="-1" role="dialog" aria-labelledby="mdl_created_user" aria-hidden="true">
   <div class="modal-dialog modal-xs" role="document">
-    <div class="modal-content">
+    <div class="modal-content bg-white">
       <div class="modal-header">
         <h5 class="modal-title" >CREACI&Oacute;N PERSONAL</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -180,7 +180,7 @@ saveUser(){
 },
      getUsers() {
        this.$http
-        .get("/users/listData")
+        .get("/api/v1/user/listData")
         .then((res) => {
           let d = res.data;
           console.log(res);

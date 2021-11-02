@@ -5,7 +5,8 @@
   <div class="row w-100">
     <div class="col-lg-4 mx-auto">
       <div class="auto-form-wrapper">        
-        <form class="form-horizontal" method="POST" action="{{ route('login') }}">
+        <!-- <form class="form-horizontal" method="POST" action="{{ route('login') }}"> -->
+        <form class="form-horizontal" method="POST" action="{{ url('/api/login') }}">
         {{ csrf_field() }}
 
         

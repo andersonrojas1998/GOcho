@@ -2,10 +2,11 @@
 Route::get('/','PagesController@homeIndex');
 
 Auth::routes();
-Route::group(['middleware' => ['auth']], function () {    
-    Route::get('/home', 'HomeController@index')->name('home');                    
+        
+/*Route::group(['middleware' => ['auth']], function () {    
+    
     require (__DIR__ . '/rt_users.php');    
-});
+});*/
 
 // For Clear cache
 Route::get('/clear-cache', function() {

@@ -2338,7 +2338,7 @@ __webpack_require__.r(__webpack_exports__);
     getUsers: function getUsers() {
       var _this2 = this;
 
-      this.$http.get("/users/listData").then(function (res) {
+      this.$http.get("/api/v1/user/listData").then(function (res) {
         var d = res.data;
         console.log(res);
         _this2.users = d;
@@ -42598,7 +42598,7 @@ var render = function() {
           "div",
           { staticClass: "modal-dialog modal-xs", attrs: { role: "document" } },
           [
-            _c("div", { staticClass: "modal-content" }, [
+            _c("div", { staticClass: "modal-content bg-white" }, [
               _vm._m(4),
               _vm._v(" "),
               _c("div", { staticClass: "modal-body" }, [
